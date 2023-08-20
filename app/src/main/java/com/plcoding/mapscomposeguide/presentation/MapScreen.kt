@@ -5,6 +5,8 @@ import androidx.compose.material.FloatingActionButton
 import androidx.compose.material.Icon
 import androidx.compose.material.Scaffold
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.DarkMode
+import androidx.compose.material.icons.filled.LightMode
 import androidx.compose.material.icons.filled.ToggleOff
 import androidx.compose.material.icons.filled.ToggleOn
 import androidx.compose.material.rememberScaffoldState
@@ -39,8 +41,8 @@ fun MapScreen(
             }) {
                 Icon(
                     imageVector = if (viewModel.state.isFalloutMap) {
-                        Icons.Default.ToggleOff
-                    } else Icons.Default.ToggleOn,
+                        Icons.Default.LightMode
+                    } else Icons.Default.DarkMode,
                     contentDescription = "Toggle Fallout Map"
                 )
             }

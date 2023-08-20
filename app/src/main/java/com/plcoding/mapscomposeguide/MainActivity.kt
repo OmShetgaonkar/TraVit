@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Surface
 import androidx.compose.ui.Modifier
+import com.plcoding.mapscomposeguide.LayoutsX.Topbar
 import com.plcoding.mapscomposeguide.presentation.MapScreen
 import com.plcoding.mapscomposeguide.ui.theme.MapsComposeGuideTheme
 
@@ -20,7 +21,7 @@ class MainActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colors.background
                 ) {
-                    MapScreen()
+                    Topbar()
                 }
             }
         }
